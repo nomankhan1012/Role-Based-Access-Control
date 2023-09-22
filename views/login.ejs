@@ -1,0 +1,26 @@
+<%- include('./layout/header.ejs') %>
+
+<h1>Login</h1>
+<form action="/auth/login" method="post" class="lg-form">
+  <div>
+    <label for="email">Email/Username</label>
+    <input type="email" name="email" id="email"
+    value="<%= locals.email ? email:"" %>" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+  </div>
+  <div>
+    <input type="submit" value="Login" />
+  </div>
+</form>
+
+<div>
+  <h4>
+    Don't have an account? <span><a href="/auth/register">Register</a></span>
+  </h4>
+</div>
+<br />
+<%- include('./layout/footer.ejs') %>
+
