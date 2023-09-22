@@ -1,8 +1,8 @@
 {
   "name": "proj",
   "version": "1.0.0",
-  "description": "lets start together node js series",
-  "main": "first.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon ./app.js"
   },
